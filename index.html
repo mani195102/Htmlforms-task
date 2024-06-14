@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML FORMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./index.css"/>
+    <script src="./index.js" defer></script>
+    
+</head>
+<body>
+   
+    <div class="container mt-5">
+        <h1 id="title">HTML FORMS</h1>
+        <p id="description">HTML FORM using bootstrap and javascript (values are Displayed in table and reset ) </p>
+        <form id="form">
+          <div class="form-group">
+            <label for="first-name">First Name</label>
+            <input type="text" class="form-control" placeholder="Enter your first name" id="first-name" required>
+          </div>
+          <div class="form-group">
+            <label for="last-name">Last Name</label>
+            <input type="text" class="form-control" placeholder="Enter your Last name" id="last-name" required>
+          </div>
+          <div class="form-group">
+            <label for="address">Address</label>
+            <textarea type="text" placeholder="Enter your address here...."class="form-control" id="address" name="address" required></textarea>
+
+          <div class="form-group">
+            <label for="pincode">Pincode</label>
+            <input type="text" placeholder="Enter your Pincode here...." class="form-control" id="pincode" required>
+          </div>
+          <div class="form-group">
+            <label class="mr-2" for="gender">Gender:-</label>
+
+            <input type="radio" id="gender" name="gender" value="male" required>
+            <label class="mr-2" for="male">Male</label>
+
+            
+            <input type="radio" id="gender" name="gender" value="female" required>
+            <label class="mr-2" for="female">Female</label>
+
+           
+            <input type="radio" id="gender" name="gender" value="other" required>
+            <label class="mr-2" for="other">other</label>
+
+          </div>
+          <div class="form-group">
+            <label for="food">Choice of Food (Choose 2 out of 5 options)</label>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="food1" value="pizza">
+              <label class="form-check-label" for="food1">
+                Pizza
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="food2" value="burger">
+              <label class="form-check-label" for="food2">
+                Burger
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="food3" value="pasta">
+              <label class="form-check-label" for="food3">
+                Pasta
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="food4" value="sushi">
+              <label class="form-check-label" for="food4">
+                Sushi
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="food5" value="salad">
+              <label class="form-check-label" for="food5">
+                Salad
+              </label>
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="state">State</label>
+            <input type="text" class="form-control" id="state" required>
+          </div>
+          <div class="form-group">
+            <label for="country">Country</label>
+            <input type="text" class="form-control" id="country" required>
+          </div>
+          <button type="submit" id="submit" class="btn btn-primary">Submit</button>
+        </form>
+        
+        <table class="table mt-5">
+          <thead>
+            <tr>
+              <th>First Name</th>
+              <th>Last Name</th>
+              <th>Pincode</th>
+              <th>Address</th>
+              <th>State</th>
+              <th>Country</th>
+              <th>Gender</th>
+              <th>Food</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody">
+            <!-- Table contents will be appended here by manimuthu -->
+          </tbody>
+        </table>
+      </div>
+  
+    <script src="https://app.zenclass.in/sheets/v1/js/zen/suite/bundle.js"></script>
+</body>
+</html>
